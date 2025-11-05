@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duc Tran — Platform Engineer</title>
+    <meta
+      name="description"
+      content="Duc Tran (Daniel) — Platform Engineer. Go, Kubernetes, Observability, CI/CD. Building reliable and scalable services."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>"
+    />
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <!-- Animated background blobs -->
+    <div
+      class="fixed inset-0 overflow-hidden pointer-events-none"
+      aria-hidden="true"
+    >
+      <div
+        class="absolute -top-40 -left-40 w-80 h-80 rounded-full bg-violet-500/20 blur-[120px] animate-blob-slow"
+      ></div>
+      <div
+        class="absolute -bottom-40 -right-40 w-80 h-80 rounded-full bg-blue-500/20 blur-[120px] animate-blob"
+        style="animation-delay: -4s"
+      ></div>
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-violet-500/10 blur-[150px] animate-blob"
+        style="animation-delay: -2s"
+      ></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="relative z-10 sticky top-4 mx-4">
+      <nav
+        class="flex items-center justify-between px-4 py-3 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-full shadow-xl"
+      >
+        <a href="#top" class="font-bold text-xl tracking-tight text-white">
+          duc<span class="text-violet-400">tran</span>.dev
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a
+            href="#about"
+            class="text-slate-300 hover:text-white font-medium transition-colors"
+            >About</a
+          >
+          <a
+            href="#stack"
+            class="text-slate-300 hover:text-white font-medium transition-colors"
+            >Stack</a
+          >
+          <a
+            href="#contact"
+            class="text-slate-300 hover:text-white font-medium transition-colors"
+            >Contact</a
+          >
+        </div>
+        <div class="flex items-center gap-3">
+          <a
+            href="https://github.com/ductran999"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-ghost text-sm px-4 py-2"
+            >GitHub</a
+          >
+          <button
+            id="hamburger"
+            class="md:hidden p-2 rounded-lg border border-slate-700 text-slate-300 hover:bg-slate-800"
+            aria-label="Menu"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+      <div
+        id="navLinks"
+        class="md:hidden hidden absolute top-full left-4 right-4 mt-2 bg-slate-900/95 backdrop-blur-md border border-slate-700/50 rounded-2xl py-4 px-4"
+      >
+        <a
+          href="#about"
+          class="block py-2 text-slate-300 hover:text-white font-medium"
+          >About</a
+        >
+        <a
+          href="#stack"
+          class="block py-2 text-slate-300 hover:text-white font-medium"
+          >Stack</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 text-slate-300 hover:text-white font-medium"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <main class="relative z-10">
+      <!-- HERO -->
+      <section
+        id="top"
+        class="min-h-screen flex items-center justify-center px-6 py-20"
+      >
+        <div class="max-w-6xl w-full">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <!-- Left: Text Content -->
+            <div class="lg:pr-8">
+              <!-- Slogan Badge -->
+              <div class="slogan-badge mb-8 w-fit">
+                <span>🛠️</span>
+                <span>Curiosity drives mastery.</span>
+              </div>
+
+              <!-- Name & Title -->
+              <h1
+                class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-white mb-4"
+              >
+                Hi, I'm
+                <span
+                  class="bg-gradient-to-r from-blue-400 via-violet-400 to-blue-400 bg-clip-text text-transparent animate-pulse"
+                  >Duc</span
+                >
+              </h1>
+              <h2
+                class="text-3xl md:text-5xl lg:text-6xl font-semibold text-slate-300 mb-8"
+              >
+                Platform Engineer.
+              </h2>
+
+              <!-- Value Proposition -->
+              <p
+                class="text-lg md:text-xl lg:text-2xl text-slate-400 mb-12 max-w-3xl leading-relaxed text-balance"
+              >
+                I build resilient infrastructure, automate the boring stuff, and
+                craft seamless developer experiences so teams can ship faster.
+              </p>
+
+              <!-- CTA Buttons -->
+              <div class="flex flex-wrap gap-4 mb-16">
+                <a href="#stack" class="btn btn-primary">My Stack</a>
+                <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+              </div>
+
+              <!-- Stats -->
+              <div
+                class="flex flex-wrap gap-8 md:gap-12 text-center md:text-left"
+              >
+                <div>
+                  <div
+                    class="text-3xl md:text-4xl font-extrabold text-violet-400"
+                  >
+                    30+
+                  </div>
+                  <div class="text-slate-500 text-sm mt-1">Public Repos</div>
+                </div>
+                <div class="border-l border-slate-700 pl-8 md:pl-12">
+                  <div
+                    class="text-3xl md:text-4xl font-extrabold text-blue-400"
+                  >
+                    Go
+                  </div>
+                  <div class="text-slate-500 text-sm mt-1">Main Language</div>
+                </div>
+                <div class="border-l border-slate-700 pl-8 md:pl-12">
+                  <div
+                    class="text-3xl md:text-4xl font-extrabold text-violet-400"
+                  >
+                    K8s
+                  </div>
+                  <div class="text-slate-500 text-sm mt-1">+ Observability</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Profile Card -->
+            <div class="hidden lg:block">
+              <div class="card sticky top-24 max-w-sm mx-auto">
+                <div class="text-center">
+                  <img
+                    src="https://avatars.githubusercontent.com/u/74949792?v=4"
+                    alt="Duc Tran avatar"
+                    class="w-28 h-28 rounded-full border-4 border-violet-400/30 mx-auto mb-6 shadow-2xl"
+                  />
+                  <h3 class="text-2xl font-bold text-white mb-1">Duc Tran</h3>
+                  <p class="text-violet-400 font-medium mb-6">
+                    Platform Engineer · Go / K8s
+                  </p>
+                  <div class="flex flex-wrap justify-center gap-2 mb-6">
+                    <span
+                      class="px-3 py-1 text-xs font-semibold bg-slate-800 border border-slate-700 rounded-full text-violet-300"
+                      >Go</span
+                    >
+                    <span
+                      class="px-3 py-1 text-xs font-semibold bg-slate-800 border border-slate-700 rounded-full text-violet-300"
+                      >Kubernetes</span
+                    >
+                    <span
+                      class="px-3 py-1 text-xs font-semibold bg-slate-800 border border-slate-700 rounded-full text-violet-300"
+                      >OTel</span
+                    >
+                    <span
+                      class="px-3 py-1 text-xs font-semibold bg-slate-800 border border-slate-700 rounded-full text-violet-300"
+                      >Prometheus</span
+                    >
+                    <span
+                      class="px-3 py-1 text-xs font-semibold bg-slate-800 border border-slate-700 rounded-full text-violet-300"
+                      >GitLab</span
+                    >
+                    <span
+                      class="px-3 py-1 text-xs font-semibold bg-slate-800 border border-slate-700 rounded-full text-violet-300"
+                      >Jenkins</span
+                    >
+                  </div>
+                  <a
+                    class="btn btn-violet w-full"
+                    href="https://github.com/ductran999"
+                    target="_blank"
+                    rel="noopener"
+                    >Follow on GitHub</a
+                  >
+                </div>
+
+                <!-- Terminal -->
+                <div
+                  class="mt-8 bg-slate-950 border border-slate-700 rounded-xl overflow-hidden"
+                >
+                  <div
+                    class="flex items-center gap-1.5 px-4 py-3 bg-slate-900 border-b border-slate-700"
+                  >
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    <span class="ml-3 text-slate-500 text-sm font-mono"
+                      >platform — zsh</span
+                    >
+                  </div>
+                  <pre
+                    class="p-4 font-mono text-sm text-violet-300 overflow-x-auto"
+                  ><code>$ kubectl get nodes
+NAME       STATUS   ROLES
+prod-01    Ready    control-plane
+prod-02    Ready    worker
+prod-03    Ready    worker
+
+$ otelcol --config pipeline.yaml
+✅ traces → tempo · metrics → prometheus</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+          <p class="section-eyebrow">About</p>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-8">
+            Reliability first, complexity last.
+          </h2>
+          <div class="grid md:grid-cols-2 gap-12">
+            <p class="text-slate-300 text-lg leading-relaxed">
+              I'm a Platform Engineer who loves Go and Kubernetes. Day to day I
+              build internal tooling, standardize CI/CD pipelines (GitLab,
+              Jenkins), and make observability boring — in a good way — with
+              OpenTelemetry and Prometheus. This site is my public notebook.
+            </p>
+            <ul class="space-y-4">
+              <li
+                class="flex items-start gap-3 p-4 bg-slate-800/50 border border-slate-700/50 rounded-xl"
+              >
+                <span class="text-2xl">🔧</span>
+                <span class="text-slate-300"
+                  >Go services, shared libs & DB tooling</span
+                >
+              </li>
+              <li
+                class="flex items-start gap-3 p-4 bg-slate-800/50 border border-slate-700/50 rounded-xl"
+              >
+                <span class="text-2xl">☸️</span>
+                <span class="text-slate-300"
+                  >Kubernetes deployments, Helm, GitOps mindset</span
+                >
+              </li>
+              <li
+                class="flex items-start gap-3 p-4 bg-slate-800/50 border border-slate-700/50 rounded-xl"
+              >
+                <span class="text-2xl">📊</span>
+                <span class="text-slate-300"
+                  >OTel tracing + Prometheus metrics dashboards</span
+                >
+              </li>
+              <li
+                class="flex items-start gap-3 p-4 bg-slate-800/50 border border-slate-700/50 rounded-xl"
+              >
+                <span class="text-2xl">🔁</span>
+                <span class="text-slate-300"
+                  >GitLab CI / Jenkins pipelines, automation</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- STACK -->
+      <section id="stack" class="py-20 px-6 bg-slate-900/50">
+        <div class="max-w-5xl mx-auto">
+          <p class="section-eyebrow">Tech Stack</p>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-10">
+            What I work with
+          </h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article class="card">
+              <h3
+                class="text-lg font-bold text-white mb-3 flex items-center gap-2"
+              >
+                🐹 Languages
+              </h3>
+              <p class="text-slate-400">
+                Go (primary), Rust (learning), Bash, SQL
+              </p>
+            </article>
+            <article class="card">
+              <h3
+                class="text-lg font-bold text-white mb-3 flex items-center gap-2"
+              >
+                ☸️ Platform
+              </h3>
+              <p class="text-slate-400">Kubernetes, Docker, Helm, Linux</p>
+            </article>
+            <article class="card">
+              <h3
+                class="text-lg font-bold text-white mb-3 flex items-center gap-2"
+              >
+                📊 Observability
+              </h3>
+              <p class="text-slate-400">
+                OpenTelemetry, Prometheus, Grafana, Tempo/Loki
+              </p>
+            </article>
+            <article class="card">
+              <h3
+                class="text-lg font-bold text-white mb-3 flex items-center gap-2"
+              >
+                🔁 CI/CD
+              </h3>
+              <p class="text-slate-400">GitLab CI, Jenkins, GitHub Actions</p>
+            </article>
+            <article class="card">
+              <h3
+                class="text-lg font-bold text-white mb-3 flex items-center gap-2"
+              >
+                🗄️ Data
+              </h3>
+              <p class="text-slate-400">Postgres, Redis, NATS / Kafka basics</p>
+            </article>
+            <article class="card">
+              <h3
+                class="text-lg font-bold text-white mb-3 flex items-center gap-2"
+              >
+                📐 Practices
+              </h3>
+              <p class="text-slate-400">
+                System design, clean patterns, docs-as-code
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="py-20 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <p class="section-eyebrow">Contact</p>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">
+            Let's build something reliable.
+          </h2>
+          <p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto">
+            Open to platform / backend collaborations, open-source and
+            interesting infra problems.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a
+              href="https://github.com/ductran999"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+              >GitHub Profile</a
+            >
+            <a
+              href="https://github.com/ductran999?tab=repositories"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-ghost"
+              >All Repos</a
+            >
+            <a
+              href="https://medium.com/@ductran999"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-ghost"
+              >Medium</a
+            >
+            <a
+              href="https://linkedin.com/in/ductran999"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-ghost"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="relative z-10 border-t border-slate-800 py-8 px-6">
+      <div
+        class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-slate-500 text-sm"
+      >
+        <p>
+          © <span id="year"></span> Duc Tran · Built with Tailwind CSS · Hosted
+          on GitHub Pages
+        </p>
+        <a
+          href="#top"
+          class="font-semibold text-slate-400 hover:text-white transition-colors"
+          >Back to top ↑</a
+        >
+      </div>
+    </footer>
+
+    <!-- Floating Back to Top -->
+    <button
+      id="toTop"
+      aria-label="Back to top"
+      class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-gray-900 text-white flex items-center justify-center shadow-xl opacity-0 translate-y-4 pointer-events-none transition-all duration-300 hover:bg-gray-700 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100"
+    >
+      <svg
+        width="22"
+        height="22"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="3.2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

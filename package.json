@@ -1,0 +1,19 @@
+{
+  "name": "ductran999.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio — Duc Tran (Daniel), Platform Engineer. Live at https://ductran999.github.io.",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/styles.css -o ./styles.css --watch",
+    "build": "npx tailwindcss -i ./src/styles.css -o ./styles.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ductran999/ductran999.github.io.git"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "autoprefixer": "^10.6.1",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3"
+  }
+}
